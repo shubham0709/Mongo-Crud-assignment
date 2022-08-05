@@ -2,7 +2,7 @@ Qsn-> All users whose gender is male
 Ans-> db.user_info.find({gender : "Male"})
 
 Qsn-> All users whose ID is even
-Ans-> 
+Ans-> db.user_info({id : {$mod : [2,0]}})
 
 Qsn-> All users who curretly live in Japan
 Ans-> db.user_info.find({native : "Japan"})
